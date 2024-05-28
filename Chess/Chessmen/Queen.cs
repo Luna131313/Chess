@@ -1,4 +1,6 @@
-﻿namespace Chess.Chessmen
+﻿using Chess.Interfaces;
+
+namespace Chess.Chessmen
 {
     public class Queen : Chessman
     {
@@ -47,5 +49,9 @@
             new[]{ 0, -6 },
             new[]{ 0, -7 }
         };
+
+        public Queen(IPlayer owner) : base(owner)
+        {
+        }
     }
 }

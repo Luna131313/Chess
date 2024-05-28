@@ -1,4 +1,6 @@
-﻿namespace Chess.Chessmen
+﻿using Chess.Interfaces;
+
+namespace Chess.Chessmen
 {
     public class Pawn : Chessman
     {
@@ -14,6 +16,10 @@
             {
                 return Y == 1 ? new List<int[]>(_possibleMoves) { new[] { 2, 0 } } : _possibleMoves;
             }
+        }
+
+        public Pawn(IPlayer owner) : base(owner)
+        {
         }
     }
 }

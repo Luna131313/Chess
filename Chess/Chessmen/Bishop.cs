@@ -1,4 +1,6 @@
-﻿namespace Chess.Chessmen
+﻿using Chess.Interfaces;
+
+namespace Chess.Chessmen
 {
     public class Bishop : Chessman
     {
@@ -19,5 +21,9 @@
             new[]{ -6, -6 },
             new[]{ -7, -7 }
         };
+
+        public Bishop(IPlayer owner) : base(owner)
+        {
+        }
     }
 }

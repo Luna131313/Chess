@@ -1,11 +1,20 @@
-﻿namespace Chess.Chessmen
+﻿using Chess.Interfaces;
+
+namespace Chess.Chessmen
 {
     public abstract class Chessman
     {
-        public bool IsDead { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
+        public bool IsDead { get; set; }
+        public IPlayer Owner { get; set; }
         public abstract List<int[]> PossibleMoves { get; }
+
+        protected Chessman(IPlayer owner)
+        {
+            Owner = owner;
+        }
+
         public bool MoveIsValid(int x, int y)
         {
             if (X + x < 0 || x + X > 7 || y + Y < 0 || y + Y > 7)

@@ -1,4 +1,6 @@
-﻿namespace Chess.Chessmen
+﻿using Chess.Interfaces;
+
+namespace Chess.Chessmen
 {
     public class Rook : Chessman
     {
@@ -33,5 +35,9 @@
             new[]{ 0, -6 },
             new[]{ 0, -7 }
         };
+
+        public Rook(IPlayer owner) : base(owner)
+        {
+        }
     }
 }
