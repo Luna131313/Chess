@@ -5,7 +5,7 @@
         public bool IsDead { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
-        public abstract int[][] PossibleMoves { get; }
+        public abstract List<int[]> PossibleMoves { get; }
         public bool MoveIsValid(int x, int y)
         {
             if (X + x < 0 || x + X > 7 || y + Y < 0 || y + Y > 7)
