@@ -7,12 +7,11 @@ namespace Chess.Chessmen
         public int X { get; set; }
         public int Y { get; set; }
         public bool IsDead { get; set; }
-        public IPlayer Owner { get; set; }
+        public string Color { get; set; }
         public abstract List<int[]> PossibleMoves { get; }
 
-        protected Chessman(IPlayer owner)
+        protected Chessman()
         {
-            Owner = owner;
         }
 
         public bool MoveIsValid(int x, int y)

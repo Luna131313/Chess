@@ -2,7 +2,13 @@
 
 namespace Chess
 {
-    internal class Player : IPlayer
+    public class Player : IPlayer
     {
+        public string Color { get; set; }
+
+        public Player(string color)
+        {
+            Color = color;
+        }
     }
 }

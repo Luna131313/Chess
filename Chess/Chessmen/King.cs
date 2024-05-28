@@ -16,7 +16,7 @@ namespace Chess.Chessmen
             new[]{ -1, -1 }
         };
 
-        public King(IPlayer owner) : base(owner)
+        public King(IPlayer owner) : base()
         {
         }
     }

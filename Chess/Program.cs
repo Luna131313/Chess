@@ -4,7 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Do you want to be black or white?");
+            var color = Console.ReadLine();
+            var game = new Game();
         }
     }
 }
