@@ -5,9 +5,11 @@ namespace Chess
 {
     public class Game : IGame
     {
-        public Player Black { get; set; }
+        public IBoard Board { get; }
 
-        public Player White { get; set; }
+        public IPlayer Black { get; set; }
+
+        public IPlayer White { get; set; }
 
         public bool GameOver
         {
@@ -30,6 +32,7 @@ namespace Chess
         public Game()
         {
             var player = ReadDesiredColor();
+            var board = new Board();
         }
 
         public static string ReadDesiredColor()
