@@ -5,6 +5,10 @@ namespace Chess
 {
     public class Game : IGame
     {
+        public Player Black { get; set; }
+
+        public Player White { get; set; }
+
         public bool GameOver
         {
             get
@@ -20,10 +24,6 @@ namespace Chess
 
             }
         }
-
-        public Player Black { get; set; }
-
-        public Player White { get; set; }
 
         public Game()
         {
