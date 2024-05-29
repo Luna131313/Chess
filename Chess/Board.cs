@@ -1,5 +1,4 @@
-﻿using Chess.Chessmen;
-using Chess.Interfaces;
+﻿using Chess.Interfaces;
 
 namespace Chess
 {

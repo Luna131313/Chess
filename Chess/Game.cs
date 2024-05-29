@@ -43,46 +43,47 @@ namespace Chess
             var board = new Board();
 
             // TODO refactor
-            InitializeKnights(board);
-            InitializeRooks(board);
+            InitializeKnights();
+            InitializeRooks();
             InitializePawns(board);
 
             return board;
         }
 
-        private void InitializeKnights(Board board)
+        private void InitializeKnights()
         {
             // add white rooks
-            board[1, 0].Owner = new Knight("White", 1, 0);
-            board[6, 0].Owner = new Knight("White", 6, 0);
+            Board[1, 0].Owner = new Knight("White", 1, 0);
+            Board[6, 0].Owner = new Knight("White", 6, 0);
 
             // add black rooks
-            board[1, 7].Owner = new Knight("Black", 1, 7);
-            board[6, 7].Owner = new Knight("Black", 6, 7);
+            Board[1, 7].Owner = new Knight("Black", 1, 7);
+            Board[6, 7].Owner = new Knight("Black", 6, 7);
         }
-        private void InitializeRooks(Board board)
+
+        private void InitializeRooks()
         {
             // add white rooks
-            board[0, 0].Owner = new Rook("White", 0, 0);
-            board[7, 0].Owner = new Rook("White", 7, 0);
+            Board[0, 0].Owner = new Rook("White", 0, 0);
+            Board[7, 0].Owner = new Rook("White", 7, 0);
 
             // add black rooks
-            board[0, 7].Owner = new Rook("Black", 0, 7);
-            board[7, 7].Owner = new Rook("Black", 7, 7);
+            Board[0, 7].Owner = new Rook("Black", 0, 7);
+            Board[7, 7].Owner = new Rook("Black", 7, 7);
         }
 
-        private void InitializePawns(Board board)
+        private void InitializePawns()
         {
             // add white pawns
             for (var i = 0; i < 7; i++)
             {
-                board[i, 1].Owner = new Pawn("White", i, 1);
+                Board[i, 1].Owner = new Pawn("White", i, 1);
             }
 
             // add black pawns
             for (var i = 0; i < 7; i++)
             {
-                board[i, 6].Owner = new Pawn("Black", i, 6);
+                Board[i, 6].Owner = new Pawn("Black", i, 6);
             }
         }
 
