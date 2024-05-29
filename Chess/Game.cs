@@ -38,6 +38,11 @@ namespace Chess
             InitializeChessmen(); // TODO: sollte die Methode lieber am Ende von CreateBoard() aufgerufen werden?
         }
 
+        public void StartGame()
+        {
+
+        }
+
         private void CreateBoard()
         {
             InitializeKings();
