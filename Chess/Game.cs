@@ -42,8 +42,10 @@ namespace Chess
             var board = new Board();
 
             // TODO refactor
-            InitializePawns(board);
+            // TODO am besten eine eigene Methode initialize Player wo ich dann die Figuren der oberen bzw. der unteren beiden Reihen zur Chessman liste des jeweiligen Spielers hinzufüge
+            InitializeKnights(board);
             InitializeRooks(board);
+            InitializePawns(board);
 
             return board;
         }
@@ -53,20 +55,20 @@ namespace Chess
             // add white rooks
             var knight1 = new Knight("White", 1, 0);
             White.Chessmen.Add(knight1);
-            board[0, 0].Owner = knight1;
+            board[1, 0].Owner = knight1;
 
             var knight2 = new Knight("White", 6, 0);
             White.Chessmen.Add(knight2);
-            board[7, 0].Owner = knight2;
+            board[6, 0].Owner = knight2;
 
             // add black rooks
             var knight3 = new Knight("Black", 1, 7);
             White.Chessmen.Add(knight3);
-            board[0, 0].Owner = knight3;
+            board[1, 7].Owner = knight3;
 
             var knight4 = new Knight("Black", 6, 7);
             White.Chessmen.Add(knight4);
-            board[7, 0].Owner = knight4;
+            board[6, 7].Owner = knight4;
         }
         private void InitializeRooks(Board board)
         {
@@ -82,11 +84,11 @@ namespace Chess
             // add black rooks
             var rook3 = new Rook("Black", 0, 7);
             White.Chessmen.Add(rook3);
-            board[0, 0].Owner = rook3;
+            board[0, 7].Owner = rook3;
 
             var rook4 = new Rook("Black", 7, 7);
             White.Chessmen.Add(rook4);
-            board[7, 0].Owner = rook4;
+            board[7, 7].Owner = rook4;
         }
 
         private void InitializePawns(Board board)
