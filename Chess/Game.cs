@@ -54,9 +54,6 @@ namespace Chess
             var board = new Board();
 
             // TODO refactor
-            // TODO am besten eine eigene Methode initialize Player
-            // in der ich dann die Figuren der oberen bzw. der unteren beiden Reihen
-            // zur Chessman Liste des jeweiligen Spielers hinzufüge
             InitializeKnights(board);
             InitializeRooks(board);
             InitializePawns(board);
