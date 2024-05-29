@@ -33,16 +33,30 @@ namespace Chess
         public Game()
         {
             var player = ReadDesiredColor();
-            var board = CreateBoard();
+            Board = CreateBoard();
+            InitializeChessmen();
+        }
 
+        private void InitializeChessmen()
+        {
+            for (var i = 0; i < 7; i++)
+            {
+                White.Chessmen.Add(Board[i, 0].Owner);
+                White.Chessmen.Add(Board[i, 1].Owner);
+                Black.Chessmen.Add(Board[i, 6].Owner);
+                Black.Chessmen.Add(Board[i, 7].Owner);
+            }
         }
 
         private Board CreateBoard()
         {
+            // TODO: kann die Methode nicht auch void sein und direkt die Property setzen?
             var board = new Board();
 
             // TODO refactor
-            // TODO am besten eine eigene Methode initialize Player wo ich dann die Figuren der oberen bzw. der unteren beiden Reihen zur Chessman liste des jeweiligen Spielers hinzufüge
+            // TODO am besten eine eigene Methode initialize Player
+            // in der ich dann die Figuren der oberen bzw. der unteren beiden Reihen
+            // zur Chessman Liste des jeweiligen Spielers hinzufüge
             InitializeKnights(board);
             InitializeRooks(board);
             InitializePawns(board);
