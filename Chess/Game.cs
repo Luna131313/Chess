@@ -40,7 +40,7 @@ namespace Chess
 
         public void StartGame()
         {
-
+            // TODO implement game logic
         }
 
         private void CreateBoard()
