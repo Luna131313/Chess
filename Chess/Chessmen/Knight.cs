@@ -16,7 +16,7 @@ namespace Chess.Chessmen
             new[]{ -2, -1 }
         };
 
-        public Knight(string color) : base(color)
+        public Knight(string color, int x, int y) : base(color, x, y)
         {
         }
     }

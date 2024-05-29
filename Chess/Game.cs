@@ -1,4 +1,5 @@
 ﻿using System;
+using Chess.Chessmen;
 using Chess.Interfaces;
 
 namespace Chess
@@ -32,7 +33,29 @@ namespace Chess
         public Game()
         {
             var player = ReadDesiredColor();
+            var board = CreateBoard();
+
+        }
+
+        private Board CreateBoard()
+        {
             var board = new Board();
+            for (var i = 0; i < 7; i++)
+            {
+                var pawn = new Pawn("White");
+                White.Chessmen.Add(pawn);
+                board[i, 1].Owner = pawn;
+            }
+
+            for (var i = 0; i < 7; i++)
+            {
+                var pawn = new Pawn("White");
+                pawn.X = i;
+                pawn.Y = 6;
+                White.Chessmen.Add(pawn);
+                board[i, 6].Owner = pawn;
+            }
+            return board;
         }
 
         public static string ReadDesiredColor()

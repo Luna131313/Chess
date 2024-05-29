@@ -22,7 +22,7 @@ namespace Chess.Chessmen
             new[]{ -7, -7 }
         };
 
-        public Bishop(string color) : base(color)
+        public Bishop(string color, int x, int y) : base(color, x, y)
         {
         }
     }

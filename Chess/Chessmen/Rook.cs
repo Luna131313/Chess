@@ -36,7 +36,7 @@ namespace Chess.Chessmen
             new[]{ 0, -7 }
         };
 
-        public Rook(string color) : base(color)
+        public Rook(string color, int x, int y) : base(color, x, y)
         {
         }
     }

@@ -18,7 +18,7 @@ namespace Chess.Chessmen
             }
         }
 
-        public Pawn(string color) : base(color)
+        public Pawn(string color, int x, int y) : base(color, x, y)
         {
         }
     }

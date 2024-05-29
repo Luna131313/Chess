@@ -50,7 +50,7 @@ namespace Chess.Chessmen
             new[]{ 0, -7 }
         };
 
-        public Queen(string color) : base(color)
+        public Queen(string color, int x, int y) : base(color, x, y)
         {
         }
     }

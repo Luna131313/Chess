@@ -16,9 +16,11 @@ namespace Chess.Chessmen
 
         public abstract List<int[]> PossibleMoves { get; }
 
-        protected Chessman(string color)
+        protected Chessman(string color, int x, int y)
         {
             Color = color;
+            X = x;
+            Y = y;
         }
 
         public bool MoveIsValid(int x, int y)

@@ -8,7 +8,7 @@ namespace Chess
 
         public Tile[,] TileArray { get; set; }
 
-        public Board()
+    public Board()
         {
             TileArray = new Tile[8, 8];
             for (var x = 0; x < 8; x++)
