@@ -2,13 +2,10 @@
 
 namespace Chess.Chessmen
 {
+    // TODO en passant
     public class Pawn : Chessman
     {
-        // TODO en passant
-        private readonly List<int[]> _possibleMoves = new()
-        {
-            new[] { 1,0 }
-        };
+        private readonly List<int[]> _possibleMoves;
 
         public override List<int[]> PossibleMoves
         {
@@ -20,6 +17,10 @@ namespace Chess.Chessmen
 
         public Pawn(string color, int x, int y) : base(color, x, y)
         {
+            _possibleMoves = new List<int[]>
+            {
+                new[] { 1,0 }
+            };
         }
     }
 }
