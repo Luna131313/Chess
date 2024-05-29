@@ -40,7 +40,6 @@ namespace Chess
 
         private void CreateBoard()
         {
-            // TODO refactor
             InitializeKings();
             InitializeQueens();
             InitializeKnights();
