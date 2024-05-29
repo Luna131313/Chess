@@ -45,7 +45,7 @@ namespace Chess
             // TODO refactor
             InitializeKnights();
             InitializeRooks();
-            InitializePawns(board);
+            InitializePawns();
 
             return board;
         }
