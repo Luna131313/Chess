@@ -1,22 +1,25 @@
-﻿using Chess.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using Chess.Interfaces;
 
 namespace Chess
 {
     public class Game : IGame
     {
         public bool GameOver { get; set; }
+        public bool Patt { get; set; }
 
         public List<Player> PlayerList = new();
 
         public Game()
         {
-            var player = InitializePlayer();
+            var player = ReadDesiredColor();
             PlayerList.Add(player);
         }
 
-        public Player InitializePlayer()
+        public static string ReadDesiredColor()
         {
-            string? color;
+            string color;
             do
             {
                 Console.WriteLine("Do you want to be black or white?");
@@ -24,9 +27,9 @@ namespace Chess
                 switch (color)
                 {
                     case "black" or "Black" or "b" or "B":
-                        return new Player("Black");
+                        return "Black";
                     case "white" or "White" or "w" or "W":
-                        return new Player("White");
+                        return "White";
                     default:
                         Console.WriteLine($"{color} is an invalid color, you need to choose between black and white.");
                         continue;

@@ -1,5 +1,4 @@
-﻿using Chess.Chessmen;
-using Chess.Interfaces;
+﻿using Chess.Interfaces;
 
 namespace Chess
 {
@@ -19,6 +18,11 @@ namespace Chess
         public void PlaceChessman()
         {
             IsOccupied = true;
+        }
+
+        public void RemoveChessman()
+        {
+            IsOccupied = false;
         }
     }
 }
