@@ -5,8 +5,6 @@ namespace Chess
     public class Board : IBoard
     {
         public Tile this[int x, int y] => TileArray[x, y];
-        // TODO Kann ich nicht mehrere indexer haben?
-        // public Chessman this[int x, int y] => TileArray[x, y].Owner;
 
         public Tile[,] TileArray { get; set; }
 
