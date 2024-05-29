@@ -4,6 +4,8 @@ namespace Chess
 {
     public class Board : IBoard
     {
+        public Tile this[int x, int y] => TileArray[x, y];
+
         public Tile[,] TileArray { get; set; }
 
         public Board()

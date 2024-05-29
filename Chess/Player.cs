@@ -9,10 +9,10 @@ namespace Chess
         public string Color { get; set; }
         public List<Chessman> Chessmen { get; set; }
 
-        public Player(string color, List<Chessman> chessmen)
+        public Player(string color)
         {
             Color = color;
-            Chessmen = chessmen;
+            Chessmen = new List<Chessman>();
         }
     }
 }

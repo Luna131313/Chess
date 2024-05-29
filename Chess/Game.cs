@@ -1,20 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
 using Chess.Interfaces;
 
 namespace Chess
 {
     public class Game : IGame
     {
-        public bool GameOver { get; set; }
-        public bool Patt { get; set; }
+        public bool GameOver
+        {
+            get
+            {
 
-        public List<Player> PlayerList = new();
+            }
+        }
+
+        public bool Patt
+        {
+            get
+            {
+
+            }
+        }
+
+        public Player Black { get; set; }
+
+        public Player White { get; set; }
 
         public Game()
         {
             var player = ReadDesiredColor();
-            PlayerList.Add(player);
         }
 
         public static string ReadDesiredColor()
