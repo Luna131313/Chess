@@ -43,7 +43,7 @@ namespace Chess
             InitializeKnights();
             InitializeRooks();
             InitializeBishops();
-            InitializeQueen();
+            InitializeQueens();
             InitializePawns();
             
         }
@@ -81,7 +81,7 @@ namespace Chess
             Board[5, 7].Owner = new Bishop("Black", 5, 7);
         }
 
-        private void InitializeQueen()
+        private void InitializeQueens()
         {
             // add white queen
             Board[3, 0].Owner = new Queen("White", 3, 0);
