@@ -13,7 +13,8 @@ namespace Chess
         {
             get
             {
-
+                // TODO
+                return false;
             }
         }
 
@@ -21,7 +22,8 @@ namespace Chess
         {
             get
             {
-
+                // TODO
+                return false;
             }
         }
 
@@ -44,7 +46,7 @@ namespace Chess
                     case "white" or "White" or "w" or "W":
                         return "White";
                     default:
-                        Console.WriteLine($"{color} is an invalid color, you need to choose between black and white.");
+                        Console.WriteLine($"\"{color}\" is an invalid color, you need to choose between black and white.");
                         continue;
                 }
             } while (color is not ("black" or "Black" or "b" or "B" or "white" or "White" or "w" or "W"));

@@ -7,9 +7,13 @@ namespace Chess.Chessmen
     public abstract class Chessman
     {
         public int X { get; set; }
+
         public int Y { get; set; }
+
         public bool IsDead { get; set; }
+
         public string Color { get; set; }
+
         public abstract List<int[]> PossibleMoves { get; }
 
         protected Chessman(string color)
@@ -26,6 +30,7 @@ namespace Chess.Chessmen
 
             return PossibleMoves.Any(move => X + x == move[0] && Y + y == move[1]);
         }
+
         public void Move(int x, int y)
         {
             if (!MoveIsValid(x, y))
