@@ -33,21 +33,16 @@ namespace Chess
         public Game()
         {
             var player = ReadDesiredColor();
-            Board = CreateBoard();
+            CreateBoard();
             InitializeChessmen(); // TODO: sollte die Methode lieber am Ende von CreateBoard() aufgerufen werden?
         }
 
-        private Board CreateBoard()
+        private void CreateBoard()
         {
-            // TODO: kann die Methode nicht auch void sein und direkt die Property setzen?
-            var board = new Board();
-
             // TODO refactor
             InitializeKnights();
             InitializeRooks();
             InitializePawns();
-
-            return board;
         }
 
         private void InitializeKnights()
