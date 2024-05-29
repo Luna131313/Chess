@@ -13,8 +13,7 @@ namespace Chess
         public Player(string color)
         {
             Color = color;
-            King = new King(color);
-            Chessmen = new List<Chessman> { King };
+            Chessmen = new List<Chessman>();
         }
     }
 }

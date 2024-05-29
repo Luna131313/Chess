@@ -33,6 +33,7 @@ namespace Chess
         public Game()
         {
             var player = ReadDesiredColor();
+            Board = new Board();
             CreateBoard();
             InitializeChessmen(); // TODO: sollte die Methode lieber am Ende von CreateBoard() aufgerufen werden?
         }
@@ -40,12 +41,30 @@ namespace Chess
         private void CreateBoard()
         {
             // TODO refactor
+            InitializeKings();
+            InitializeQueens();
             InitializeKnights();
             InitializeRooks();
             InitializeBishops();
-            InitializeQueens();
             InitializePawns();
-            
+        }
+
+        private void InitializeKings()
+        {
+            // add white king
+            Board[4, 0].Owner = new Queen("White", 3, 0);
+
+            // add black king
+            Board[4, 7].Owner = new Queen("Black", 3, 7);
+        }
+
+        private void InitializeQueens()
+        {
+            // add white queen
+            Board[3, 0].Owner = new Queen("White", 3, 0);
+
+            // add black queen
+            Board[3, 7].Owner = new Queen("Black", 3, 7);
         }
 
         private void InitializeKnights()
@@ -79,15 +98,6 @@ namespace Chess
             // add black queen
             Board[2, 7].Owner = new Bishop("Black", 2, 7);
             Board[5, 7].Owner = new Bishop("Black", 5, 7);
-        }
-
-        private void InitializeQueens()
-        {
-            // add white queen
-            Board[3, 0].Owner = new Queen("White", 3, 0);
-
-            // add black queen
-            Board[3, 7].Owner = new Queen("Black", 3, 7);
         }
 
         private void InitializePawns()
