@@ -37,17 +37,6 @@ namespace Chess
             InitializeChessmen(); // TODO: sollte die Methode lieber am Ende von CreateBoard() aufgerufen werden?
         }
 
-        private void InitializeChessmen()
-        {
-            for (var i = 0; i < 7; i++)
-            {
-                White.Chessmen.Add(Board[i, 0].Owner);
-                White.Chessmen.Add(Board[i, 1].Owner);
-                Black.Chessmen.Add(Board[i, 6].Owner);
-                Black.Chessmen.Add(Board[i, 7].Owner);
-            }
-        }
-
         private Board CreateBoard()
         {
             // TODO: kann die Methode nicht auch void sein und direkt die Property setzen?
@@ -94,6 +83,17 @@ namespace Chess
             for (var i = 0; i < 7; i++)
             {
                 board[i, 6].Owner = new Pawn("Black", i, 6);
+            }
+        }
+
+        private void InitializeChessmen()
+        {
+            for (var i = 0; i < 7; i++)
+            {
+                White.Chessmen.Add(Board[i, 0].Owner);
+                White.Chessmen.Add(Board[i, 1].Owner);
+                Black.Chessmen.Add(Board[i, 6].Owner);
+                Black.Chessmen.Add(Board[i, 7].Owner);
             }
         }
 
