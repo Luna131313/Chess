@@ -12,6 +12,7 @@ namespace Chess
 
         public IPlayer White { get; set; }
 
+        // TODO: hier oder in IPlayer?
         public bool GameOver
         {
             get
@@ -21,6 +22,7 @@ namespace Chess
             }
         }
 
+        // TODO: hier oder in IPlayer?
         public bool Patt
         {
             get
