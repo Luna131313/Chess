@@ -18,6 +18,7 @@ namespace Chess.Chessmen
 
         protected Chessman(string color, int x, int y)
         {
+            IsDead = false;
             Color = color;
             X = x;
             Y = y;
