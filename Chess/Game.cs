@@ -42,7 +42,10 @@ namespace Chess
             // TODO refactor
             InitializeKnights();
             InitializeRooks();
+            InitializeBishops();
+            InitializeQueen();
             InitializePawns();
+            
         }
 
         private void InitializeKnights()
@@ -65,6 +68,26 @@ namespace Chess
             // add black rooks
             Board[0, 7].Owner = new Rook("Black", 0, 7);
             Board[7, 7].Owner = new Rook("Black", 7, 7);
+        }
+
+        private void InitializeBishops()
+        {
+            // add white queen
+            Board[2, 0].Owner = new Bishop("White", 2, 0);
+            Board[5, 0].Owner = new Bishop("White", 5, 0);
+
+            // add black queen
+            Board[2, 7].Owner = new Bishop("Black", 2, 7);
+            Board[5, 7].Owner = new Bishop("Black", 5, 7);
+        }
+
+        private void InitializeQueen()
+        {
+            // add white queen
+            Board[3, 0].Owner = new Queen("White", 3, 0);
+
+            // add black queen
+            Board[3, 7].Owner = new Queen("Black", 3, 7);
         }
 
         private void InitializePawns()
