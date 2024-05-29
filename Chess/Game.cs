@@ -125,8 +125,11 @@ namespace Chess
             {
                 White.Chessmen.Add(Board[i, 0].Owner);
                 White.Chessmen.Add(Board[i, 1].Owner);
+                White.King = Board[4, 0].Owner;
+
                 Black.Chessmen.Add(Board[i, 6].Owner);
                 Black.Chessmen.Add(Board[i, 7].Owner);
+                Black.King = Board[4, 0].Owner;
             }
         }
 
