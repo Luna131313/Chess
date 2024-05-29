@@ -22,7 +22,7 @@ namespace Chess.Chessmen
             new[]{ -7, -7 }
         };
 
-        public Bishop(IPlayer owner) : base()
+        public Bishop(string color) : base(color)
         {
         }
     }

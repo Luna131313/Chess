@@ -10,8 +10,9 @@ namespace Chess.Chessmen
         public string Color { get; set; }
         public abstract List<int[]> PossibleMoves { get; }
 
-        protected Chessman()
+        protected Chessman(string color)
         {
+            Color = color;
         }
 
         public bool MoveIsValid(int x, int y)

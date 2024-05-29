@@ -36,7 +36,7 @@ namespace Chess.Chessmen
             new[]{ 0, -7 }
         };
 
-        public Rook(IPlayer owner) : base()
+        public Rook(string color) : base(color)
         {
         }
     }

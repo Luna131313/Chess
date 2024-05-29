@@ -50,7 +50,7 @@ namespace Chess.Chessmen
             new[]{ 0, -7 }
         };
 
-        public Queen(IPlayer owner) : base()
+        public Queen(string color) : base(color)
         {
         }
     }

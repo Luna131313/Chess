@@ -5,7 +5,7 @@ namespace Chess
 {
     public class Tile : ITile
     {
-        public Chessman Owner { get; set; }
+        //public Chessman Owner { get; set; }
         public bool IsOccupied { get; set; }
         public int X { get; }
         public int Y { get; }

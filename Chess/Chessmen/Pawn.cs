@@ -18,7 +18,7 @@ namespace Chess.Chessmen
             }
         }
 
-        public Pawn(IPlayer owner) : base()
+        public Pawn(string color) : base(color)
         {
         }
     }
