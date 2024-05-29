@@ -40,19 +40,19 @@ namespace Chess
         private Board CreateBoard()
         {
             var board = new Board();
+            // add white chessmen
             for (var i = 0; i < 7; i++)
             {
-                var pawn = new Pawn("White");
+                var pawn = new Pawn("White", i, 1);
                 White.Chessmen.Add(pawn);
                 board[i, 1].Owner = pawn;
             }
 
+            // add black chessmen
             for (var i = 0; i < 7; i++)
             {
-                var pawn = new Pawn("White");
-                pawn.X = i;
-                pawn.Y = 6;
-                White.Chessmen.Add(pawn);
+                var pawn = new Pawn("Black", i, 6);
+                Black.Chessmen.Add(pawn);
                 board[i, 6].Owner = pawn;
             }
             return board;
