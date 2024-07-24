@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using Chess.Model;
 
 namespace Chess
@@ -21,9 +15,29 @@ namespace Chess
         // TODO: Methoden zum Initialisieren des Schachbretts refactoren?
         // TODO: Eigentlich ist es doppelt die Farbe sowohl in Player als auch in Chessman zu speichern, weil die Figuren sowieso in der Chessmen Liste gespeichert sind.
 
+        private static App _app;
+        private static Game _game;
+        //private static TitleScreenViewModel _titleScreenViewModel;
+        //private static TitleScreen _titleScreen;
+        //private static GameViewModel _gameViewModel;
+        //private static GameView _gameView;
+        //private static EndScreenViewModel _endScreenViewModel;
+        //private static EndScreenView _endScreenView;
+
         [System.STAThreadAttribute()]
-        public static void Main(string[] args)
+        public static void Main()
         {
+            _app = new App();
+
+            _app.Run();
+
+            //_titleScreen = new TitleScreen
+            //{
+            //    DataContext = _titleScreenViewModel
+            //};
+
+            //_app.Run(_titleScreen);
+
             var game = new Game();
             game.StartGame();
         }

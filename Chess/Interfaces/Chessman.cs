@@ -1,4 +1,8 @@
-﻿namespace Chess.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Chess.Interfaces;
 
 public abstract class Chessman
 {

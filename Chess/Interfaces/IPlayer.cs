@@ -1,4 +1,6 @@
-﻿namespace Chess.Interfaces;
+﻿using System.Collections.Generic;
+
+namespace Chess.Interfaces;
 
 public interface IPlayer
 {
