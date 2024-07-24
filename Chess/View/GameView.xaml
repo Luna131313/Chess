@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chess.View"
         mc:Ignorable="d"
-        Title="GameView" Height="800" Width="800" Background="Aqua">
+        Title="GameView" Height="800" Width="800" Background="DarkGray">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
