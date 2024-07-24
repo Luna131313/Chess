@@ -1,0 +1,30 @@
+﻿using Chess.Interfaces;
+
+namespace Chess.Model;
+
+public class Tile : ITile
+{
+    public Chessman Owner { get; set; }
+
+    public bool IsOccupied { get; set; }
+
+    public int X { get; }
+
+    public int Y { get; }
+
+    public Tile(int x, int y) // TODO
+    {
+        X = x;
+        Y = y;
+    }
+
+    public void PlaceChessman()
+    {
+        IsOccupied = true;
+    }
+
+    public void RemoveChessman()
+    {
+        IsOccupied = false;
+    }
+}
