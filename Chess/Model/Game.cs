@@ -1,4 +1,5 @@
-﻿using Chess.Interfaces;
+﻿using System;
+using Chess.Interfaces;
 using Chess.Model.Chessmen;
 
 namespace Chess.Model;
