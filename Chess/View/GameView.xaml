@@ -32,23 +32,23 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="3" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="4" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="5" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="6" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="7" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="0" Grid.Column="8" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="4" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="5" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="6" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="7" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="0" Grid.Column="8" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
 
-        <TextBlock Grid.Row="9" Grid.Column="1" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="2" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="3" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="4" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="5" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="6" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="7" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        <TextBlock Grid.Row="9" Grid.Column="8" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Grid.Row="9" Grid.Column="1" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="2" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="3" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="4" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="5" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="6" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="7" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
+        <TextBlock Grid.Row="9" Grid.Column="8" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2.5"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
