@@ -1,8 +1,7 @@
-﻿namespace Chess.Interfaces
+﻿namespace Chess.Interfaces;
+
+public interface IBoard
 {
-    public interface IBoard
-    {
-        public Tile[,] TileArray { get; set; }
-        public Tile this[int x, int y] { get; }
-    }
+    public ITile[,] TileArray { get; set; }
+    public ITile this[int x, int y] { get; }
 }
