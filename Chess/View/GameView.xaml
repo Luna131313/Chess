@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chess.View"
         mc:Ignorable="d"
-        Title="GameView" Height="800" Width="800">
+        Title="GameView" Height="800" Width="800" Background="Aqua">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -32,7 +32,6 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
         <TextBlock Grid.Row="0" Grid.Column="1" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
         <TextBlock Grid.Row="0" Grid.Column="2" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
         <TextBlock Grid.Row="0" Grid.Column="3" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
@@ -69,77 +68,100 @@
         <TextBlock Grid.Row="7" Grid.Column="9" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
         <TextBlock Grid.Row="8" Grid.Column="9" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
 
-        <!-- Chess board -->
-        <Border Grid.Row="1" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="1" Grid.Column="8" Background="White" BorderBrush="Black" BorderThickness="1" />
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="8" Grid.ColumnSpan="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        <Border Grid.Row="2" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="2" Grid.Column="8" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- Chess board -->
+            <Border Grid.Row="0" Grid.Column="0" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="0" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="3" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="3" Grid.Column="8" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="0" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="1" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="4" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="4" Grid.Column="8" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="0" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="2" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="5" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="5" Grid.Column="8" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="0" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="3" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="6" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="6" Grid.Column="8" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="0" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="4" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="7" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="7" Grid.Column="8" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="0" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="5" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
 
-        <Border Grid.Row="8" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
-        <Border Grid.Row="8" Grid.Column="8" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="0" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="2" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="3" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="4" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="5" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="6" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="6" Grid.Column="7" Background="White" BorderBrush="Black" BorderThickness="1" />
+
+            <Border Grid.Row="7" Grid.Column="0" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="1" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="2" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="3" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="4" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="5" Background="Black" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="6" Background="White" BorderBrush="Black" BorderThickness="1" />
+            <Border Grid.Row="7" Grid.Column="7" Background="Black" BorderBrush="Black" BorderThickness="1" />
+        </Grid>
     </Grid>
 </Window>
