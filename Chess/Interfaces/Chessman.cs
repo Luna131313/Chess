@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Chess.Chessmen
+namespace Chess.Interfaces
 {
     public abstract class Chessman
     {

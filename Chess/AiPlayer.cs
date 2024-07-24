@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Chess.Chessmen;
 using Chess.Interfaces;
 
 namespace Chess
